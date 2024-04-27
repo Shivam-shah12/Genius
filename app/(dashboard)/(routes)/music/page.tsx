@@ -5,7 +5,7 @@ import Heading from "@/components/mycompo/Heading";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { useProModal } from "@/hooks/user-pro-modal";
-import { formSchema } from "./constants";
+import { formSchema } from "./constant";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Form, FormControl, FormField, FormItem } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
