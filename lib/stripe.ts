@@ -1,7 +1,7 @@
 import Stripe from 'stripe'
 
 
-export const stripe=new Stripe("sk_test_51P95grSBJf0iJHkCwiixQOgchlRpQ0lq4nyTEmQjXFwECGo2K6V0Hrp0ZNdF50bQGhqvcTIAwKfjsVkio51RQJP100TJzKSQWf",{
+export const stripe=new Stripe(JSON.stringify(process.env.STRIPE_API_KEY),{
     apiVersion:"2024-04-10",
     typescript:true
 });
