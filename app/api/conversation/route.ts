@@ -4,7 +4,7 @@ import { checkApiLimit, increaseApiLimit } from '@/lib/api-limit';
 import { checkSubscription } from '@/lib/subscription';
 
 // Initialize Google's AI model (ensure that your API key and initialization are correctly configured)
-const genAi = new GoogleGenerativeAI("AIzaSyD-N7QZ-pjNZr_lq0vYpEWYBz0lqjOGKZI");
+const genAi = new GoogleGenerativeAI(JSON.stringify(process.env.GENAI_KEY));
 
 export async function POST(
     req: Request
